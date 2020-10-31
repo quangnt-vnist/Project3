@@ -1,0 +1,29 @@
+.bg-loader {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.loader {
+    width: 1em;
+    height: 1em;
+    vertical-align: text-bottom;
+    border: .125em solid #605ca8;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: spin 1s linear infinite; /* Safari */
+    animation: spin 1s linear infinite;
+    display: inline-block;
+
+    margin-top: 0.1em;
+    position: absolute;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,116 @@
+[{
+    "_id": "1",
+    "name": "Thuốc úm gia cầm",
+    "type": "Thuộc bột",
+    "returnRule": ["Chỉ được đổi trả trong 15 ngày", "Hàng khuyến mãi không được đổi trả", "Đổi trả phải nguyên đơn nguyên kiện"],
+    "serviceLevelAgreement": ["Hàng cam kết đúng hạn sử dụng trong thỏa thuận", "Quy cách đóng gói đạt tiêu chuẩn an toàn"],
+    "discount": ["1", "2", "3", "4", "5"],
+    "tax": ["2"],
+    "createQuotation": "Nguyễn Văn A",
+    "approverQuotation": "Trịnh Văn B",
+    "pricePerBaseUnit": 50000,
+    "baseUnit": "Hộp",
+    "salesPriceVariance": 10000,
+    "effectiveDateQuotation": "10/10/2020",
+    "expirationDateQuotation": "10/10/2021",
+    "createAt": "09:30:45 09/10/2020",
+    "log": [{
+        "creator": "Phạm Đại Tài",
+        "createAt": "09:30:45 09/10/2020",
+        "title": "Thay đổi trường name",
+        "description": "name - Thuốc úm gia cầm bột - thuốc úm gia cầm"
+    }]
+},
+{
+    "_id": "2",
+    "name": "Thuốc úm gia cầm",
+    "type": "Thuộc bột",
+    "returnRule": ["Chỉ được đổi trả trong 15 ngày", "Hàng khuyến mãi không được đổi trả", "Đổi trả phải nguyên đơn nguyên kiện"],
+    "serviceLevelAgreement": ["Hàng cam kết đúng hạn sử dụng trong thỏa thuận", "Quy cách đóng gói đạt tiêu chuẩn an toàn"],
+    "discount": ["1", "2", "3", "4", "5"],
+    "tax": ["2"],
+    "createQuotation": "Nguyễn Văn A",
+    "approverQuotation": "Trịnh Văn B",
+    "pricePerBaseUnit": 50000,
+    "baseUnit": "Hộp",
+    "salesPriceVariance": 10000,
+    "effectiveDateQuotation": "10/10/2020",
+    "expirationDateQuotation": "10/10/2021",
+    "createAt": "09:30:45 09/10/2020",
+    "log": [{
+        "creator": "Phạm Đại Tài",
+        "createAt": "09:30:45 09/10/2020",
+        "title": "Thay đổi trường name",
+        "description": "name - Thuốc úm gia cầm bột - thuốc úm gia cầm"
+    }]
+},
+{
+    "_id": "3",
+    "name": "Thuốc úm gia cầm",
+    "type": "Thuộc bột",
+    "returnRule": ["Chỉ được đổi trả trong 15 ngày", "Hàng khuyến mãi không được đổi trả", "Đổi trả phải nguyên đơn nguyên kiện"],
+    "serviceLevelAgreement": ["Hàng cam kết đúng hạn sử dụng trong thỏa thuận", "Quy cách đóng gói đạt tiêu chuẩn an toàn"],
+    "discount": ["1", "2", "3", "4", "5"],
+    "tax": ["2"],
+    "createQuotation": "Nguyễn Văn A",
+    "approverQuotation": "Trịnh Văn B",
+    "pricePerBaseUnit": 50000,
+    "baseUnit": "Hộp",
+    "salesPriceVariance": 10000,
+    "effectiveDateQuotation": "10/10/2020",
+    "expirationDateQuotation": "10/10/2021",
+    "createAt": "09:30:45 09/10/2020",
+    "log": [{
+        "creator": "Phạm Đại Tài",
+        "createAt": "09:30:45 09/10/2020",
+        "title": "Thay đổi trường name",
+        "description": "name - Thuốc úm gia cầm bột - thuốc úm gia cầm"
+    }]
+},
+{
+    "_id": "4",
+    "name": "Thuốc úm gia cầm",
+    "type": "Thuộc bột",
+    "returnRule": ["Chỉ được đổi trả trong 15 ngày", "Hàng khuyến mãi không được đổi trả", "Đổi trả phải nguyên đơn nguyên kiện"],
+    "serviceLevelAgreement": ["Hàng cam kết đúng hạn sử dụng trong thỏa thuận", "Quy cách đóng gói đạt tiêu chuẩn an toàn"],
+    "discount": ["1", "2", "3", "4", "5"],
+    "tax": ["2"],
+    "createQuotation": "Nguyễn Văn A",
+    "approverQuotation": "Trịnh Văn B",
+    "pricePerBaseUnit": 50000,
+    "baseUnit": "Hộp",
+    "salesPriceVariance": 10000,
+    "effectiveDateQuotation": "10/10/2020",
+    "expirationDateQuotation": "10/10/2021",
+    "createAt": "09:30:45 09/10/2020",
+    "log": [{
+        "creator": "Phạm Đại Tài",
+        "createAt": "09:30:45 09/10/2020",
+        "title": "Thay đổi trường name",
+        "description": "name - Thuốc úm gia cầm bột - thuốc úm gia cầm"
+    }]
+},
+{
+    "_id": "5",
+    "name": "Thuốc úm gia cầm",
+    "type": "Thuộc bột",
+    "returnRule": ["Chỉ được đổi trả trong 15 ngày", "Hàng khuyến mãi không được đổi trả", "Đổi trả phải nguyên đơn nguyên kiện"],
+    "serviceLevelAgreement": ["Hàng cam kết đúng hạn sử dụng trong thỏa thuận", "Quy cách đóng gói đạt tiêu chuẩn an toàn"],
+    "discount": ["1", "2", "3", "4", "5"],
+    "tax": ["2"],
+    "createQuotation": "Nguyễn Văn A",
+    "approverQuotation": "Trịnh Văn B",
+    "pricePerBaseUnit": 50000,
+    "baseUnit": "Hộp",
+    "salesPriceVariance": 10000,
+    "effectiveDateQuotation": "10/10/2020",
+    "expirationDateQuotation": "10/10/2021",
+    "createAt": "09:30:45 09/10/2020",
+    "log": [{
+        "creator": "Phạm Đại Tài",
+        "createAt": "09:30:45 09/10/2020",
+        "title": "Thay đổi trường name",
+        "description": "name - Thuốc úm gia cầm bột - thuốc úm gia cầm"
+    }]
+}
+]

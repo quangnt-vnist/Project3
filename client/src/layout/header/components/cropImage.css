@@ -1,0 +1,52 @@
+.crop-image-modal{
+    width: 54% !important;
+}
+
+.crop-content {
+    border-radius: 5px;
+    border: 3px solid gray;
+}
+
+.crop-content-image {
+    background-color: rgba(0, 0, 0, 0.199);
+    width: 100%; 
+    min-height: 300px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .crop-image-modal{
+        width: 90% !important;
+    }
+}
+
+/* Edit avatar options */
+.profile-pic {
+    width: 100%;
+	position: relative;
+	display: inline-block;
+}
+
+.profile-pic:hover .edit-option {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.459);
+    font-size: 24px;
+}
+
+.edit-option { 
+    height: 100%; width: 100%;
+    background-color: gray;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: none;
+}
+
+.user-avatar {
+    width: 100%
+}
+
+.edit-crop-avatar {
+    width: 100%
+}

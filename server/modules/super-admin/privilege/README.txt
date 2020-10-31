@@ -1,0 +1,1 @@
+1. Module thuc hien chuc nang phan quyen cac thanh phan tuong ung voi role.

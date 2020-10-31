@@ -1,0 +1,1 @@
+1. Module nay thuc hien chuc nang quan ly cac thanh phan UI, UX tuong ung voi cac role trong he thong.

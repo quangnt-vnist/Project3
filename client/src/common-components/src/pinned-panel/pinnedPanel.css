@@ -1,0 +1,7 @@
+.pinned-panel {
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    position: fixed;
+    cursor: move;
+}

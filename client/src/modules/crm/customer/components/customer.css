@@ -1,0 +1,273 @@
+
+/* css timeline customer status */
+.timeline {
+  margin: 4.5em auto 4em auto;
+  height: 5px;
+  background-color: #ccc;
+  width: 80%;
+
+}
+
+.timeline:before{ 
+	  content: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    left: 31px;
+    margin: 0;
+    border-radius: 2px;
+}
+
+.timeline-crm-progress {
+  width: 0%;
+  height: 100%;
+  background-color: #008d4c;
+  transition:all ease 0.9s;
+}
+
+.timeline-items {
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-top: -12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.timeline-item::before {
+  content: " ";
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  display: block;
+  border-radius: 100%;
+}
+
+.timeline-contain {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ddd;
+  width: 10em;
+  padding: 5px 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.timeline-contain::before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  display: block;
+  position: absolute;
+  top: 20px;
+  margin-left: -2px;
+  left: 50%;
+  transform: rotate(-45deg) translateX(-50%);
+}
+
+.timeline-item.active::before {
+  background-color: #008d4c;
+}
+
+.timeline-item.active .timeline-contain {
+  color: #fff;
+  background-color: #008d4c;
+}
+
+.timeline-item.active .timeline-contain::before {
+  background-color: #008d4c;
+}
+
+/* css avatar customer */
+.image-wrapper:hover{
+  cursor: pointer;
+}
+.customer-avatar{
+  vertical-align: middle;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+
+/* Nút hiển thị thêm thông tin khách hàng tab thông tin chi tiết */
+.showMoreInfo{
+  color: #e07e7e;
+}
+.showMoreInfo:hover{
+  cursor: pointer;
+}
+
+/* Style timeline histories tab infoForm */
+.histories-timeline-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 40px 0;
+}
+
+.histories-timeline-container::after {
+    background-color: #008d4c;
+    content: '';
+    position: absolute;
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 100%;
+}
+
+.histories-timeline-item {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    position: relative;
+    margin: 10px 0;
+    width: 50%;
+}
+
+.histories-timeline-item:nth-child(odd) {
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.histories-timeline-item__content{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px;
+    position: relative;
+    width: 450px;
+    max-width: 80%;
+    text-align: left;
+}
+
+.histories-timeline-item__content::after {
+    content: ' ';
+    background-color: #fff;
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: -7.5px;
+    top: calc(50% - 7.5px);
+    transform: rotate(45deg);
+    width: 15px;
+    height: 15px;
+}
+
+.histories-timeline-item:nth-child(odd) .histories-timeline-item__content {
+    text-align: left;
+    align-items: flex-start;
+}
+
+.histories-timeline-item:nth-child(odd) .histories-timeline-item__content::after {
+    right: auto;
+    left: -7.5px;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.histories-timeline-item__content time {
+    color: #e07e7e;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.histories-timeline-item__content p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px 0;
+    max-width: 300px;
+}
+
+.histories-timeline-item__content a {
+    font-size: 14px;
+    color: #777;
+}
+
+.histories-timeline-item__content a::after {
+    content: ' ►';
+    font-size: 12px;
+}
+
+.histories-timeline-item__content .circle {
+    background-color: #fff;
+    border: 3px solid #008d4c;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: -40px;
+    width: 20px;
+    height: 20px;
+    z-index: 100;
+}
+
+.histories-timeline-item:nth-child(odd) .histories-timeline-item__content .circle {
+    right: auto;
+    left: -40px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .histories-timeline-item__content {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .histories-timeline-item__content,
+    .histories-timeline-item:nth-child(odd) .histories-timeline-item__content {
+        padding: 15px 10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .histories-timeline-item__content .tag {
+        width: calc(100% - 10px);
+        text-align: center;
+    }
+
+    .histories-timeline-item__content time {
+        margin-top: 20px;
+    }
+
+    .histories-timeline-item__content a {
+        text-decoration: underline;
+    }
+
+    .histories-timeline-item__content a::after {
+        display: none;
+    }
+}
+
+/* css border tabs purchaseHistoriesInfoform */
+
+.purchaseHistories .nav-tabs-custom > .nav-tabs > li {
+  border: 1px solid transparent !important;
+}
+
+.purchaseHistories .nav-tabs-custom > .nav-tabs > li.active > a {
+  color: #444;
+  border-top-color: #f4f4f4;
+}
+
+.purchaseHistories .nav-tabs-custom > .nav-tabs > li > a{
+  color: #8e8e8e;
+}
+.purchaseHistories .nav-tabs-custom{
+  box-shadow: none;
+  margin-bottom: 0px;
+}
+
+.codeOrder{
+  color: #82a3e4;
+}

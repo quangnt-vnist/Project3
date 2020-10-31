@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="icon" href="%PUBLIC_URL%/logo.png">
+  <title>Giải pháp không gian làm việc số</title>
+
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+  <script src="%PUBLIC_URL%/library/jquery/jquery.min.js"></script><!-- jQuery 3 -->
+
+
+  <link rel="stylesheet" href="%PUBLIC_URL%/library/bootstrap/css/bootstrap.min.css">
+  <script src="%PUBLIC_URL%/library/bootstrap/bootstrap.min.js"></script><!-- Bootstrap 3.3.7 -->
+  <script type="text/javascript">
+    // Code fix bug bootstrap: khi mở nhiều modal và đóng 1 modal, body sẽ bị mất class modal-open và có scroll y, xấu và bất tiện
+    $(document).on('hidden.bs.modal', function () {
+      if ($('.modal.in').length) {
+        $('body').addClass('modal-open');
+      }
+    });
+
+  </script>
+
+
+  <link rel="stylesheet" href="%PUBLIC_URL%/library/adminLTE/AdminLTE.min.css">
+  <link rel="stylesheet" href="%PUBLIC_URL%/library/adminLTE/_all-skins.min.css">
+  <script src="%PUBLIC_URL%/library/adminLTE/adminlte.min.js"></script>
+
+
+  <!-- Thư viện common-components: jquery plugin (sẽ thêm default-passive-event sau nếu cần?)-->
+  <script src="%PUBLIC_URL%/library/jquery-plugin/bootstrap-datepicker.min.js"></script>
+  <link rel="stylesheet" href="%PUBLIC_URL%/library/jquery-plugin/bootstrap-datepicker.min.css">
+
+  <script src="%PUBLIC_URL%/library/jquery-plugin/bootstrap-multiselect.js"></script>
+  <link rel="stylesheet" href="%PUBLIC_URL%/library/jquery-plugin/bootstrap-multiselect.css">
+
+  <script src="%PUBLIC_URL%/library/jquery-plugin/bootstrap-timepicker.min.js"></script>
+  <link rel="stylesheet" href="%PUBLIC_URL%/library/jquery-plugin/bootstrap-timepicker.min.css">
+
+  <script src="%PUBLIC_URL%/library/jquery-plugin/select2.full.min.js"></script>
+  <link rel="stylesheet" href="%PUBLIC_URL%/library/jquery-plugin/select2.min.css">
+
+  <script src="%PUBLIC_URL%/library/jquery-plugin/jstree/jstree.min.js"></script>
+  <link rel="stylesheet" href="%PUBLIC_URL%/library/jquery-plugin/jstree/themes/default/style.min.css">
+</head>
+
+<body class="hold-transition skin-purple sidebar-mini" style="background-color: #222D32;">
+  <div id="root"></div>
+</body>
+
+</html>

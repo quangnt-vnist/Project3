@@ -1,0 +1,44 @@
+.list-upload-file-cmc{
+    border: 1px solid  #3c8dbc;
+    padding: 10px 10px 0px 10px;
+}
+.ul-upload-file-cmc{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.ul-upload-file-cmc  li{
+    background-color: #f3f3f3;
+    border: 1px solid #c3c3c3;
+    margin-bottom: 10px;
+    width: fit-content;
+    border-radius: 3px;
+    padding: 5px;
+}
+.ul-upload-file-cmc  label{
+    margin:0px;
+}
+/* .delete-label-upfile-cmc:hover{
+    transform:scale(1.1);
+    transition: 0.1s;
+} */
+.file-name-upfile{
+    color: #333
+}
+.file-name-upfile:hover{
+    color: #333
+}
+#delete-icon-upload-cmc{
+    color: #333;
+    margin-right: 5px;
+    border-radius: 100%;
+    width: 17px;
+    height: 17px;
+    background-color: #c3c3c3;
+    padding: 1.5px 0px 0px 3px;
+}
+#delete-icon-upload-cmc:hover{
+    color: whitesmoke;
+    background-color: #333;
+    transition: 0.3s
+}

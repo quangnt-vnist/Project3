@@ -1,0 +1,232 @@
+[{
+    "_id": "1",
+    "status": "Chờ phê duyệt",
+    "stock": "Kho vật tư B23",
+    "description": "Mua hàng sản xuất thuốc úm gà phục vụ kế hoạch sản xuất hợp đồng tháng 11/2020 cho công ty An Việt", 
+    "creator": "Phạm Đại Tài",
+    "responsible": "Nguyễn Anh Phương",
+    "code": "BPMH_1123",
+    "goods": [{
+        "_id": "1",
+        "returnRule": "Sản phẩm được đổi trả trong vòng 30 ngày",
+        "serviceLevelAgreement": "Hàng nguyên đơn nguyên kiện, đảm bảo chất lượng và hạn sử dụng trên bao bì",
+        "name": " DL – Methionin",
+        "baseUnit": "Kg",
+        "price": 50000,
+        "quantity": 10
+    }, {
+        "_id": "2",
+        "returnRule": "Sản phẩm được đổi trả trong vòng 20 ngày",
+        "serviceLevelAgreement": "Hàng nguyên đơn nguyên kiện, đảm bảo chất lượng và hạn sử dụng trên bao bì",
+        "name": "Vitamin B6",
+        "baseUnit": "Kg",
+        "price": 80000,
+        "quantity": 6
+    },
+    {
+        "_id": "3",
+        "returnRule": "Sản phẩm được đổi trả trong vòng 20 ngày",
+        "serviceLevelAgreement": "Hàng nguyên đơn nguyên kiện, đảm bảo chất lượng và hạn sử dụng trên bao bì",
+        "name": "Oxytetracyclin, HCL",
+        "baseUnit": "Kg",
+        "price": 60000,
+        "quantity": 15
+    }],
+    "returnRule": "Đổi trả phải đem đến tận kho để thực hiện đổi trả, không chịu mọi chi phí vận chuyển phát sinh",
+    "serviceLevelAgreement": "",
+    "approvers": [],
+    "partner": "Nguyễn Hữu Tiền",
+    "payments": [],
+    "createAt": "Mon Dec 24 2018 10:33:30 GMT+0700",
+    "updateAt": "Mon Dec 24 2018 10:33:30 GMT+0700"
+}, 
+{
+    "_id": "2",
+    "status": "Đang mua hàng",
+    "stock": "Kho vật tư B23",
+    "description": "Mua hàng sản xuất thuốc úm gà phục vụ kế hoạch sản xuất hợp đồng tháng 11/2020 cho công ty An Việt", 
+    "creator": "Phạm Đại Tài",
+    "responsible": "Nguyễn Anh Phương",
+    "code": "BPMH_1123",
+    "goods": [{
+        "_id": "1",
+        "returnRule": "Sản phẩm được đổi trả trong vòng 30 ngày",
+        "serviceLevelAgreement": "Hàng nguyên đơn nguyên kiện, đảm bảo chất lượng và hạn sử dụng trên bao bì",
+        "name": " DL – Methionin",
+        "baseUnit": "Kg",
+        "price": 50000,
+        "quantity": 10
+    }, {
+        "_id": "2",
+        "returnRule": "Sản phẩm được đổi trả trong vòng 20 ngày",
+        "serviceLevelAgreement": "Hàng nguyên đơn nguyên kiện, đảm bảo chất lượng và hạn sử dụng trên bao bì",
+        "name": "Vitamin B6",
+        "baseUnit": "Kg",
+        "price": 80000,
+        "quantity": 6
+    },
+    {
+        "_id": "3",
+        "returnRule": "Sản phẩm được đổi trả trong vòng 20 ngày",
+        "serviceLevelAgreement": "Hàng nguyên đơn nguyên kiện, đảm bảo chất lượng và hạn sử dụng trên bao bì",
+        "name": "Oxytetracyclin, HCL",
+        "baseUnit": "Kg",
+        "price": 60000,
+        "quantity": 15
+    }],
+    "returnRule": "Đổi trả phải đem đến tận kho để thực hiện đổi trả, không chịu mọi chi phí vận chuyển phát sinh",
+    "serviceLevelAgreement": "",
+    "approvers": [
+        { 
+            "role": "Kế toán",
+            "name": "Nguyễn Văn Thắng"
+        }
+    ],
+    "payments": [],
+    "partner": "Nguyễn Hữu Tiền",
+    "createAt": "Mon Dec 24 2018 10:33:30 GMT+0700",
+    "updateAt": "Mon Dec 24 2018 10:33:30 GMT+0700"
+},
+{
+    "_id": "3",
+    "status": "Đã hoàn thành",
+    "stock": "Kho vật tư B23",
+    "description": "Mua hàng sản xuất thuốc úm gà phục vụ kế hoạch sản xuất hợp đồng tháng 11/2020 cho công ty An Việt", 
+    "creator": "Phạm Đại Tài",
+    "responsible": "Nguyễn Anh Phương",
+    "code": "BPMH_1123",
+    "goods": [{
+        "_id": "1",
+        "returnRule": "Sản phẩm được đổi trả trong vòng 30 ngày",
+        "serviceLevelAgreement": "Hàng nguyên đơn nguyên kiện, đảm bảo chất lượng và hạn sử dụng trên bao bì",
+        "name": " DL – Methionin",
+        "baseUnit": "Kg",
+        "price": 50000,
+        "quantity": 10
+    }, {
+        "_id": "2",
+        "returnRule": "Sản phẩm được đổi trả trong vòng 20 ngày",
+        "serviceLevelAgreement": "Hàng nguyên đơn nguyên kiện, đảm bảo chất lượng và hạn sử dụng trên bao bì",
+        "name": "Vitamin B6",
+        "baseUnit": "Kg",
+        "price": 80000,
+        "quantity": 6
+    },
+    {
+        "_id": "3",
+        "returnRule": "Sản phẩm được đổi trả trong vòng 20 ngày",
+        "serviceLevelAgreement": "Hàng nguyên đơn nguyên kiện, đảm bảo chất lượng và hạn sử dụng trên bao bì",
+        "name": "Oxytetracyclin, HCL",
+        "baseUnit": "Kg",
+        "price": 60000,
+        "quantity": 15
+    }],
+    "returnRule": "Đổi trả phải đem đến tận kho để thực hiện đổi trả, không chịu mọi chi phí vận chuyển phát sinh",
+    "serviceLevelAgreement": "",
+    "approvers": [],
+    "partner": "Nguyễn Hữu Tiền",
+    "payments": [],
+    "createAt": "Mon Dec 24 2018 10:33:30 GMT+0700",
+    "updateAt": "Mon Dec 24 2018 10:33:30 GMT+0700"
+},
+{
+    "_id": "4",
+    "status": "Đã nhập kho",
+    "stock": "Kho vật tư B23",
+    "description": "Mua hàng sản xuất thuốc úm gà phục vụ kế hoạch sản xuất hợp đồng tháng 11/2020 cho công ty An Việt", 
+    "creator": "Phạm Đại Tài",
+    "responsible": "Nguyễn Anh Phương",
+    "code": "BPMH_1123",
+    "goods": [{
+        "_id": "1",
+        "returnRule": "Sản phẩm được đổi trả trong vòng 30 ngày",
+        "serviceLevelAgreement": "Hàng nguyên đơn nguyên kiện, đảm bảo chất lượng và hạn sử dụng trên bao bì",
+        "name": " DL – Methionin",
+        "baseUnit": "Kg",
+        "price": 50000,
+        "quantity": 10
+    }, {
+        "_id": "2",
+        "returnRule": "Sản phẩm được đổi trả trong vòng 20 ngày",
+        "serviceLevelAgreement": "Hàng nguyên đơn nguyên kiện, đảm bảo chất lượng và hạn sử dụng trên bao bì",
+        "name": "Vitamin B6",
+        "baseUnit": "Kg",
+        "price": 80000,
+        "quantity": 6
+    },
+    {
+        "_id": "3",
+        "returnRule": "Sản phẩm được đổi trả trong vòng 20 ngày",
+        "serviceLevelAgreement": "Hàng nguyên đơn nguyên kiện, đảm bảo chất lượng và hạn sử dụng trên bao bì",
+        "name": "Oxytetracyclin, HCL",
+        "baseUnit": "Kg",
+        "price": 60000,
+        "quantity": 15
+    }],
+    "returnRule": "Đổi trả phải đem đến tận kho để thực hiện đổi trả, không chịu mọi chi phí vận chuyển phát sinh",
+    "serviceLevelAgreement": "",
+    "approvers": [
+        {
+            "role": "Kế toán",
+            "name": "Nguyễn Văn Thắng"
+        },
+        {
+            "role": "Tổng giám đốc",
+            "name": "Lê Văn Độ"
+        }
+
+    ],
+    "partner": "Nguyễn Hữu Tiền",
+    "payments": [
+        {
+            "accountipaymentAtng": "Nguyễn Thị Tươi",
+            "money": 400000,
+            "paymentAt": "Mon Dec 24 2018 10:33:30 GMT+0700"
+        }
+    ],
+    "createAt": "Mon Dec 24 2018 10:33:30 GMT+0700",
+    "updateAt": "Mon Dec 24 2018 10:33:30 GMT+0700"
+},
+{
+    "_id": "5",
+    "status": "Chờ phê duyệt",
+    "stock": "Kho vật tư B23",
+    "description": "Mua hàng sản xuất thuốc úm gà phục vụ kế hoạch sản xuất hợp đồng tháng 11/2020 cho công ty An Việt", 
+    "creator": "Phạm Đại Tài",
+    "responsible": "Nguyễn Anh Phương",
+    "code": "BPMH_1123",
+    "goods": [{
+        "_id": "1",
+        "returnRule": "Sản phẩm được đổi trả trong vòng 30 ngày",
+        "serviceLevelAgreement": "Hàng nguyên đơn nguyên kiện, đảm bảo chất lượng và hạn sử dụng trên bao bì",
+        "name": " DL – Methionin",
+        "baseUnit": "Kg",
+        "price": 50000,
+        "quantity": 10
+    }, {
+        "_id": "2",
+        "returnRule": "Sản phẩm được đổi trả trong vòng 20 ngày",
+        "serviceLevelAgreement": "Hàng nguyên đơn nguyên kiện, đảm bảo chất lượng và hạn sử dụng trên bao bì",
+        "name": "Vitamin B6",
+        "baseUnit": "Kg",
+        "price": 80000,
+        "quantity": 6
+    },
+    {
+        "_id": "3",
+        "returnRule": "Sản phẩm được đổi trả trong vòng 20 ngày",
+        "serviceLevelAgreement": "Hàng nguyên đơn nguyên kiện, đảm bảo chất lượng và hạn sử dụng trên bao bì",
+        "name": "Oxytetracyclin, HCL",
+        "baseUnit": "Kg",
+        "price": 60000,
+        "quantity": 15
+    }],
+    "returnRule": "Đổi trả phải đem đến tận kho để thực hiện đổi trả, không chịu mọi chi phí vận chuyển phát sinh",
+    "serviceLevelAgreement": "",
+    "approvers": [],
+    "partner": "Nguyễn Hữu Tiền",
+    "payments": [],
+    "createAt": "Mon Dec 24 2018 10:33:30 GMT+0700",
+    "updateAt": "Mon Dec 24 2018 10:33:30 GMT+0700"
+}
+]

@@ -1,0 +1,9 @@
+.c3-ygrid-line line {
+    stroke: red;
+}
+.c3-ygrid-line.grid500 line {
+    stroke: red;
+}
+.c3-ygrid-line.grid500 text {
+    fill: #000000;
+}

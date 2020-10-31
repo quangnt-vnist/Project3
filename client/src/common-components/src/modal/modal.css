@@ -1,0 +1,86 @@
+.show-off {
+    display: none;
+}
+
+.show-on {
+    display: block;
+}
+
+.animation-dialog {
+    animation-name: show;
+    animation-duration: 0.7s;
+}
+
+@keyframes show {
+    from  {display: none;}
+    to {display: block;}
+}
+
+.modal-dialog {
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.modal-size-50 {
+    width: 50%;
+}
+
+.modal-size-75 {
+    width: 75%;
+}
+
+.modal-size-100 {
+    width: 100%;
+    margin-top: 0px;
+}
+
+.modal-size-100 > .modal-content > .modal-body {
+    height: calc(100vh);
+    max-height: calc(100vh - 115px);
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    .modal-size-50{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .modal-size-75{
+        width: 100%;
+        margin-top: 0px;
+    }
+}
+
+
+
+
+
+
+
+.modal {
+    background: rgba(0, 0, 0, 0.8);
+}
+.modal.fade .modal.fade { /* Fix bug modal cao hơn bị che khuất khi nằm trong trong modal ngắn hơn */
+    height: calc(100vh - 5px);
+}
+.modal-content {
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+}
+.modal-header {
+    height: 50px;
+}
+.modal-body {
+    max-width: 100%;
+    max-height: calc(100vh - 125px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.modal-header .modal-title {
+    font-weight: bold;
+}

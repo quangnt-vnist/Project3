@@ -1,0 +1,30 @@
+.keeping td {
+    height: 37px;
+    max-height: 37px !important;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    background-color: white;
+    z-index: 3;
+}
+
+.timekeeping td {
+    height: 37px;
+}
+
+.table {
+    table-layout: fixed !important;
+}
+
+table.timekeeping td i {
+    font-size: 12px !important;
+}
+
+.timekeeping th,
+td {
+    width: 45px;
+    border-collapse: collapse !important;
+}

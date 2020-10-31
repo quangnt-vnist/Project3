@@ -1,0 +1,31 @@
+ul.bin-location-tree {
+    list-style-type: none;
+}
+
+li.bin-location-tree {
+    border-left: 0.8px dotted rgb(194, 194, 194);
+    padding: 10px;
+}
+
+a.bin-location-tree-content {
+    border-bottom: 0.8px dotted rgb(194, 194, 194);
+    margin: 5px;
+    border: none;
+    margin-left: -4px;
+    font-size: 14px;
+    /* padding-left: -100px; */
+}
+
+a.bin-location-tree-content:hover {
+    color: red;
+}
+
+.bin-location-tree {
+    padding-top: 10px;
+    overflow: auto;
+}
+
+.scroll-row {
+    overflow: auto;
+    height: 370px;
+}

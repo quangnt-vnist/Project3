@@ -1,0 +1,25 @@
+[
+{	"_id": "5f8cfdb85781fb1af8ce5d34",
+	"code": "KH_3034",
+	"name": "Công ty A",
+	"contact": "Nguyễn Văn A",
+	"phone": "092938859",
+	"address: "Hai Bà Trưng, Hà Nội, Việt Nam"
+},
+{
+	"_id": "5f8cfdb85781fb1af8ce5d44",
+	"code": "KH_3029",
+	"name": "Công ty B",
+	"contact": "Nguyễn Văn B",
+	"phone": "009049399",
+	"address: "Hà Đông, Hà Nội, Việt Nam"
+},
+{
+	"_id": "5f8cfdb85781fb1af8ce5d47",
+	"code": "KH_3024",
+	"name": "Công ty C",
+	"contact": "Nguyễn Văn C",
+	"phone": "092938859",
+	"address: "Hoàng Mai, Hà Nội, Việt Nam"
+}
+]

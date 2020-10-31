@@ -1,0 +1,70 @@
+
+.setting-table {
+    z-index: 1000;
+    position: absolute;
+    right: 10px;
+    width: 250px;
+    margin-top: 25px;
+    text-align: left;
+
+
+    border-radius: 5px;
+    margin: 20px 0px 0px;
+    padding: 10px;
+
+    background-color: rgb(232, 240, 244);
+
+    box-sizing: border-box;
+    border-top: 2px solid rgb(54, 156, 199);
+    box-shadow: 4px 4px 15px rgba(50, 50, 50);
+}
+
+.setting-table h4 {
+    font-size: 1.2em;
+    margin: 0px 0px 15px;
+    padding: 0px;
+    font-weight: bold;
+    color: #3c8dbc;
+}
+
+.setting-table button.btn-close {
+    font-family: Arial;
+    font-size: 11px;
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    line-height: 15px;
+    background-color: rgb(60 141 188);
+    color: rgb(232, 240, 244);
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.setting-table div.form-group {
+    margin-bottom: 12px;
+}
+
+.setting-table label {
+    margin: 0;
+}
+div.setting-table div.form-group div.selectmulti {
+    margin: 0;
+}
+
+@media (max-width: 300px){
+    .setting-table {
+        width: 100%;
+    }
+}
+.setting-table div.selectmulti {
+    display: block;
+}
+.setting-table div.selectmulti > div.btn-group, .setting-table div.selectmulti > div.btn-group> button{
+    width: 100% !important;
+}

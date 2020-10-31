@@ -1,0 +1,31 @@
+.treegrid-indent {
+    width: 0px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+}
+
+.treegrid-expander {
+    width: 0px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    left:-17px;
+    cursor: pointer;
+}
+
+td.glyphicon-chevron-down:before {
+    content: "" !important;
+}
+
+td.glyphicon-chevron-right:before {
+    content: "" !important;
+}
+
+span.treegrid-indent.glyphicon-chevron-down::before {
+    content: "" !important;
+}
+
+span.treegrid-indent.glyphicon-chevron-right::before {
+    content: "" !important;
+}

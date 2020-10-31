@@ -1,0 +1,1 @@
+Chức năng quản lý thông tin tài sản (bên phía quản lý)

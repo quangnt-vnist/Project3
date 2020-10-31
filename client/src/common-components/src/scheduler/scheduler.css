@@ -1,0 +1,7 @@
+.timekeeping th, td{
+    width: auto !important;
+}
+
+.fc-col-header {
+    width: 100% !important;
+}

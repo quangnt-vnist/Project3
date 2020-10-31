@@ -1,0 +1,335 @@
+.post.clearfix{
+    border: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.user-img-level1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.content-level1{
+    background-color: #e2e0ff;
+    padding: 5px 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    margin-left: 50px;
+    margin-top: -40px;
+    margin-bottom: 0px;
+    margin-right: 20px;
+
+    position: relative;
+}
+
+.tool-level1{
+    margin-left: 55px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.text-input-level1{
+    margin-left: 50px;
+    margin-top: -40px;
+    margin-right: 20px;
+}
+
+.text-input-level1 textarea{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    
+    background-color: #e2e0ff;
+    padding: 5px 10px;
+
+    width: 100%;
+    height: auto;
+    font-size: 13px;
+
+    border: 1px solid #989da5;
+}
+
+
+
+
+
+
+.user-img-level2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.content-level2{
+    background-color: #f2f3f5;
+    padding: 5px 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    margin-left: 90px;
+    margin-top: -30px;
+    margin-bottom: 0px;
+    margin-right: 20px;
+
+    position: relative;
+}
+
+.tool-level2{
+    margin-left: 100px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
+
+.text-input-level2{
+    margin-left: 90px;
+    margin-top: -30px;
+    margin-right: 20px;
+}
+
+.text-input-level2 textarea{
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    background-color: #f2f3f5;
+    padding: 5px 10px;
+
+    width: 100%;
+    height: auto;
+    font-size: 13px;
+
+    border: 1px solid #ccd0d5;
+}
+
+
+
+
+
+.content-level1 > a, .content-level2 > a{
+    font-weight: 700;
+}
+
+
+
+
+.content-level1 .btn-group, .content-level2 .btn-group{
+    position: absolute;
+    margin: 0;
+    top: calc(50% - 10px);
+    right: -20px;
+    cursor: pointer;
+}
+
+.content-level1 .dropdown-menu, .content-level2 .dropdown-menu{
+    -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.55);
+    -moz-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.55);
+    box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.55);
+}
+
+
+
+
+
+
+.files-list{
+    min-height: 100px;
+    border: 1px dashed #D3D3D3;
+    margin-top: 10px;
+    padding: 10px;
+}
+.files-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.files-list-item {
+    padding: 10px 0px 10px 10px;
+}
+.files-list-item-content {
+    width: calc(100% - 130px);
+    float: right;
+
+    padding-top: 25px;
+}
+.files-list-item-content-item {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.files-list-item-content-item-1 {
+    font-size: 20px;
+    line-height: 30px;
+}
+.files-list-item-content-item-2 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 800;
+}
+.files-list-item-preview {
+    width: 130px;
+    display: inline-block;
+}
+.files-list-item-preview-image {
+    width: 85%;
+    display: inline-block;
+    border: 1px solid #000;
+}
+.files-list-item-preview-extension {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid #000;
+    color: white;
+    background-color: #605ca8;
+
+    text-align: center;
+    line-height: 90px;
+    font-size: 3em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}   
+.files-list-item-preview a{
+    font-size: 1.2em;
+    margin-top: -10px;
+    margin-right: -20px;
+}
+.files-list-item-content-item-comment-1 {
+    font-size: 14px;
+    line-height: 24px;
+}
+.files-list-item-content-item-comment-2 {
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 600;
+}
+
+
+
+
+#actionComment > div:nth-child(1) > div > div:nth-child(4) > ul > li {
+    margin-left: 40px;
+}
+#actionComment > div.post.clearfix > div > div > ul > li {
+    margin-left: 40px;
+}
+#documentTask > div.box-body.table-responsive.no-padding > table > tr > th:nth-child(1){
+    text-align: center;
+    width: 65px;
+}
+#documentTask > div.box-body.table-responsive> table > tr > th:nth-child(2) {
+    width: 280px;
+}
+
+
+
+.item-box {
+    line-height: 2.2;
+    border-bottom: 1px solid #f4f4f4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.outgoing-content {
+    margin-bottom: 30px !important; 
+}
+
+.files-attach {
+    width: 40%;
+    height: 40%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+.files-attach:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal-files-attach {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+
+  /* Modal Content (Image) */
+.modal-content-files-attach {
+    margin: auto;
+    display: block;
+    width: 60%;
+    max-width: 700px;
+  }
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption-files-attach {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+/* Add Animation - Zoom in the Modal */
+.modal-content-files-attach, #caption-files-attach {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+@keyframes zoom {
+from {transform:scale(0)}
+to {transform:scale(1)}
+}
+/* The Close Button */
+.close-files-attach {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+.close-files-attach:hover,
+.close-files-attach:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+  /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content-files-attach {
+      width: 100%;
+    }
+  }
+.show-files-task {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-name-document {
+    margin-bottom: -5px;
+}
+
+.comment-process {
+    line-height: normal !important;
+}

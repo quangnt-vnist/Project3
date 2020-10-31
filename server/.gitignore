@@ -1,0 +1,14 @@
+/node_modules
+
+.env
+
+/logs/_multi-tenant
+/logs/history
+
+/models/_multi-tenant
+/middleware/_multi-tenant
+/modules/_multi-tenant
+
+/upload/private
+/upload/avatars
+package-lock.json

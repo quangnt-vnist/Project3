@@ -1,0 +1,11 @@
+div.employeeBox {
+    margin-bottom: 5px;
+    width: 100%;
+    display: inline-block;
+}
+
+@media (min-width: 768px){
+    div.employeeBox {
+        width: calc(100% - 130px);
+    }
+}

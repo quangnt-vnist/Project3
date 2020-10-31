@@ -1,0 +1,82 @@
+.only-pc{
+    display: block;
+}
+.only-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 991px){
+.only-pc{
+    display: none !important;
+}
+.only-mobile{
+    display: block !important;
+}
+.listButton{
+    display: flex;
+    justify-content: center;
+}
+
+.only-mobile .listButton .item-button{
+    margin:  15px 20px;
+}
+
+.box-display{
+    display: block !important;
+}
+}
+
+
+.listItem-left, .listItem-right{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+.box-display{
+    display: flex;
+}
+
+.border{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+.border .box-title{
+    text-align: center;
+}
+
+.border .box-size{
+    width: 100%;
+    height: 150px;
+    overflow: auto;
+}
+.item{
+    display: flex;
+    padding: 6px;
+    cursor: pointer;
+}
+.item:hover{
+    background-color: #f4f4f4;
+}
+.item .checkbox-text {
+    margin-left: 10px;
+}
+.item .checkbox-text label{
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.listButton .item-button{
+    margin-bottom: 10px;
+}
+
+.report-title{
+    font-size: 17px !important;
+}
+
+.unitSearch .multiselect-container{
+    width: 100%;
+    cursor: pointer;
+}

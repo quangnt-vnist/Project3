@@ -1,0 +1,95 @@
+  
+  .react-calendar-timeline {
+    border: 1px solid #bbb;
+  }
+  .rct-dateHeader-primary{
+    background-color: green;
+    color: #fff;
+  }
+   .react-calendar-timeline .rct-dateHeader {
+    border: 1px solid #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    margin :0;
+  }
+  .react-calendar-timeline .rct-header-root {
+      background: #bbb;
+      border: 0px solid #bbb;
+  } 
+      
+  .react-calendar-timeline  .rct-dateHeader-primary { 
+        background-color: #605CA8;
+        border-left: 1px solid #bbb;
+        border-right: 1px solid #bbb;
+        color: #fff;
+  }
+
+  .rct-outer {
+      display: block;
+      overflow: hidden;
+      white-space: nowrap;
+      padding-left: 1.5px;
+  }
+  .react-calendar-timeline .rct-vertical-lines .rct-vl.rct-vl-first {
+    border-left-width: 1px;
+  }
+  .react-calendar-timeline .rct-vertical-lines .rct-vl {
+    position: absolute;
+    border-right: 1px solid #bbb;
+    z-index: 30;
+  }
+  /* .react-calendar-timeline  */
+  .rct-header-root {
+    background: #bbb;
+    border-bottom: 1px solid #bbb;
+  }
+  #rct-header-text{
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #bbb;
+    font-weight: 600;
+    padding: 20px 0px 0px 5px;
+  }
+  .rct-items .rct-item {
+    background: #ECF0F5 !important;
+    border: #000000 ;
+  }
+  
+  #start_date_after, #end_date_before{
+    z-index: 100 !important;
+  }
+  .task-progress{
+    z-index: -1;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    border-radius: 2px;
+  }
+  .flex-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  #in-time, #delay, #not-achieved{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+  }
+  #in-time{
+    background-color:#4da75b;
+  }
+  #delay{
+    background-color:  #F0D83A;
+  }
+  #not-achieved{
+    background-color: #DD4B39;
+  }
+  #label-for-calendar{
+    font-weight: 500;
+    font-size: 13px;
+    text-align: left;
+  }

@@ -1,0 +1,708 @@
+/*
+Chuẩn tắc css cho các form control:
+1. Tính từ thẻ gốc class là qlcv
+2. Tiép đến là thẻ form-inline, thẻ form-group. Sau đó đặt các control trong div form-group (Cũng có thể đặt trực tiếp trong form-inline)
+3. control có class là form-control
+Ví dụ:
+<div className="box">
+    <div className="box-body qlcv">
+        <div className="form-inline">
+            <div className = "form-group">
+                <label>Abc def</label>
+                <input className="form-control" type="text"/>
+            </div>
+        </div>
+    </div>
+</div>
+*/
+
+
+
+
+div.qlcv div.selectmulti,
+div.qlcv > .form-inline > button, div.qlcv > .form-inline > .form-group > button,
+div.qlcv > .form-inline >.form-control, div.qlcv > .form-inline > .form-group >.form-control,
+div.qlcv > .form-inline > label, div.qlcv .form-inline > .form-group> label,
+div.qlcv > .form-inline > div.select2, div.qlcv > .form-inline > .form-group > div.select2,
+div.qlcv > .form-inline > div.react-dropdown-tree-select, div.qlcv > .form-inline > .form-group > div.react-dropdown-tree-select {
+    margin: 5px 0 5px 0;
+}
+
+
+@media (min-width: 768px){
+    div.qlcv > .form-inline > .form-group,
+    div.qlcv > .form-group {
+        display: -ms-inline-flexbox;
+        display: -webkit-inline-flex;
+        display: inline-flex;
+
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+
+        align-items: center;
+    }
+
+    div.qlcv > .form-inline > div.selectmulti, div.qlcv > .form-inline > .form-group > div.selectmulti,
+    div.qlcv > .form-inline > button, div.qlcv > .form-inline > .form-group > button,
+    div.qlcv > .form-inline >.form-control, div.qlcv > .form-inline > .form-group > .form-control,
+    div.qlcv > .form-inline > label, div.qlcv .form-inline > .form-group > label,
+    div.qlcv > .form-inline > .input-group, div.qlcv .form-inline > .form-group > .input-group,
+    div.qlcv > .form-inline > div.select2, div.qlcv > .form-inline > .form-group > div.select2,
+    div.qlcv > .form-inline > div.react-dropdown-tree-select, div.qlcv > .form-inline > .form-group > div.react-dropdown-tree-select {
+        margin: 5px;
+    }
+    div.qlcv > .form-inline > div.selectmulti, div.qlcv > .form-inline > .form-group > div.selectmulti,
+    div.qlcv > .form-inline > .form-control, div.qlcv > .form-inline > .form-group > .form-control,
+    div.qlcv > .form-inline > .input-group, div.qlcv .form-inline > .form-group > .input-group,
+    div.qlcv > .form-inline > div.select2, div.qlcv > .form-inline > .form-group > div.select2,
+    div.qlcv > .form-inline > div.react-dropdown-tree-select, div.qlcv > .form-inline > .form-group > div.react-dropdown-tree-select {
+        width: 200px;
+    }
+    div.qlcv > .form-inline > label, div.qlcv .form-inline > .form-group > label{
+        width: 110px;
+        text-align: right;
+    }
+}
+
+
+
+
+
+/* Ghi đè CSS menu AdminLTE */
+.sidebar-menu > li >a { /* Menu cấp 1 */
+    white-space: pre-line;
+    padding-right: 30px;
+}
+.treeview-menu > li > a { /* Menu cấp 2 */
+    white-space: pre-line;
+    padding: 5px 5px 5px 25px;
+}
+
+
+
+
+/* Ghi đè todolist của AdminLTE */
+.todo-list > li {
+    border: 1px solid #f4f4f4;
+    background: none;
+}
+.todo-list .handle {
+    cursor: none;
+}
+
+
+
+
+/* Css cho Link */
+a {
+    color: #385898;
+}
+a:hover, a:active, a:focus {
+    color: #6a8dd1;
+}
+
+
+
+
+/* CSS cho C3 Chart */
+.c3-tooltip-container {
+    max-height: none !important;
+    width: 30%;;
+}
+
+.c3-tooltip {
+    box-shadow: none;
+    width: 100%;
+}
+
+.c3-tooltip .name {
+    text-align: left;
+    width: 70%;
+}
+.c3-tooltip .value {
+    width: 30%;
+}
+text.c3-axis-x-label, text.c3-axis-y-label {
+    font-weight: bold;
+    font-size: 120%
+}
+
+
+
+/*
+CSS cho bảng dữ liệu
+*/
+.table-hover tbody tr:hover{ /* Hight light dòng con trỏ đang trỏ tới */
+    background-color: #d7d6ee;
+}
+table thead tr th.resizing { /* Màu header cột đang được Resize */
+    background-color: #d7d6ee;
+}
+table thead tr th:not(:last-child) { /* Hiện con trỏ khi trỏ vào header bảng */
+    cursor: ew-resize;
+}
+td { /* Cho phép bảng hoạt động tốt với kích thước nhỏ, không bị vỡ chữ */
+    word-wrap: break-word;
+    white-space: normal;
+}
+.table>thead>tr>th { /* Hiện thông báo không có dữ liệu */
+    vertical-align: top;
+}
+
+
+
+
+
+/* Kích thước icon mặc định */
+.material-icons{
+    font-size: 19px;
+}
+
+
+
+
+
+
+/*
+CSS cho cột cuối trong bảng (có các hành động edit, delete, save, ...) và các icon trong đó
+*/
+table.table td:last-child, table.table th:last-child { /* Căn giữa cho cột cuối */
+    text-align: center;
+}
+table.table td a {
+    cursor: pointer;
+    margin-right: 5px;
+}
+table.table td a.add {
+    color: #27C46B;
+}
+table.table td a.copy {
+    color: #27C46B;
+}
+table.table td a.edit {
+    color: #FFC107;
+}
+table.table td a.star {
+    color: #FFC107;
+}
+table.table td a.timer {
+    color: black;
+}
+table.table td a.default {
+    color: black;
+}
+table.table td a.all_inbox {
+    color: darkred;
+}
+table.table td a.add_circle {
+    color: green;
+}
+table.table td a.save_result {
+    color: green;
+}
+table.table td a.timer:hover {
+    color: #FFC107;
+}
+table.table td a.delete {
+    color: #E34724;
+}
+table.table td a.approve {
+    color: deepskyblue;
+}
+table.table td a.post_add {
+    color: green;
+}
+
+
+
+
+
+/*
+* CSS cho thông báo với bảng (đang load dữ liệu, không có dữ liệu, ...)
+*/
+div.table-info-panel {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+
+
+
+
+/* Fieldset */
+fieldset.scheduler-border {
+    border: 1px groove #000 !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+
+    -webkit-box-shadow: 0px 5px 5px rgba(50, 50, 50, 0.1);
+    -moz-box-shadow: 0px 5px 5px rgba(50, 50, 50, 0.1);
+    box-shadow: 0px 5px 5px rgba(50, 50, 50, 0.1);
+}
+
+legend.scheduler-border {
+    width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    background-color: #fff;
+}
+
+fieldset.field-box-info {
+    border: 1px solid #D2D6DE !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+}
+
+legend.legend-box-info {
+    width:inherit; /* Or auto */
+    padding: 2px 8px 2px 8px;
+    border: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    background-color: #ffffff;
+}
+
+
+
+/* Text bị ẩn khi quá độ dài cho phép */
+.threedots {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.active-notification-button {
+    border-left: 3px solid #3C8DBC;
+}
+
+
+
+/* Description box */
+.description-box {
+    background-color: #fff;
+    box-shadow: none;
+    border: 1px solid #f4f4f4;
+    padding: 8px 15px 15px 15px;
+    line-height: 2.3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.description-box.without-border {
+    border: none;
+}
+.description-box div.no-line-height {
+    line-height: initial;
+}
+.description-box > ol, .description-box > ul {
+    margin: 0;
+}
+.description-box h4 {
+    font-weight: 600;
+    line-height: 1.5;
+}
+.description-box >strong, .description-box > div > strong, .description-box li > strong {
+    font-weight: 600;
+    padding-right: 10px;
+}
+.description-box input[type='checkbox'],
+.description-box input[type='radio']{
+    margin-top: 0.5em;
+}
+
+div.description-box.warning {
+    background-color: rgb(255, 255, 236);
+    border: 0.5px solid rgb(253, 255, 216);
+    border-left: 5px solid rgb(158, 21, 21);
+}
+div.description-box.warning > h4 {
+    font-weight: bold;
+    color: rgb(158, 21, 21);
+}
+
+
+
+/* Bootstrap 3 khi cần cho các phần tử trong row có height bằng nhau. Bootstrap 4 đã có luôn*/
+.row-equal-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.row-equal-height [class*=col-]{
+    margin:0 -.3px;
+}
+
+
+/* CSS bỏ đường viền khi focus vào các input */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none !important;
+}
+
+
+
+
+
+/* CSS cho input checkbox và radio */
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+    input[type='checkbox'],
+    input[type='radio'] {
+        --active: #3c8dbc;
+        --active-inner: #fff;
+        --focus: 2px rgba(60, 142, 190, 0.3);
+        --border: #aec8d6;
+        --border-hover: #3c8dbc;
+        --background: #fff;
+        --disabled: #F6F8FF;
+        --disabled-inner: #E1E6F9;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        height: 18px;
+        outline: none;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        margin: 1px 8px 0 0;
+        cursor: pointer;
+        border: 1px solid var(--bc, var(--border));
+        background: var(--b, var(--background));
+        -webkit-transition: background .3s, border-color .3s, box-shadow .2s;
+        transition: background .3s, border-color .3s, box-shadow .2s;
+    }
+    input[type='checkbox']:after,
+    input[type='radio']:after {
+        content: '';
+        display: block;
+        left: 0;
+        top: 0;
+        position: absolute;
+        -webkit-transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+        transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+        transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+        transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    }
+    input[type='checkbox']:checked,
+    input[type='radio']:checked {
+        --b: var(--active);
+        --bc: var(--active);
+        --d-o: .3s;
+        --d-t: .6s;
+        --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+    }
+    input[type='checkbox']:disabled,
+    input[type='radio']:disabled {
+        --b: var(--disabled);
+        cursor: not-allowed;
+        opacity: .9;
+    }
+    input[type='checkbox']:disabled:checked,
+    input[type='radio']:disabled:checked {
+        --b: var(--disabled-inner);
+        --bc: var(--border);
+    }
+    input[type='checkbox']:disabled+label,
+    input[type='radio']:disabled+label {
+        cursor: not-allowed;
+    }
+    input[type='checkbox']:hover:not(:checked):not(:disabled),
+    input[type='radio']:hover:not(:checked):not(:disabled) {
+        --bc: var(--border-hover);
+    }
+    input[type='checkbox']:focus,
+    input[type='radio']:focus {
+        box-shadow: 0 0 0 var(--focus);
+    }
+    input[type='checkbox']:not(.switch),
+    input[type='radio']:not(.switch) {
+        width: 18px;
+    }
+    input[type='checkbox']:not(.switch):after,
+    input[type='radio']:not(.switch):after {
+        opacity: var(--o, 0);
+    }
+    input[type='checkbox']:not(.switch):checked,
+    input[type='radio']:not(.switch):checked {
+        --o: 1;
+    }
+    input[type='checkbox']+label,
+    input[type='radio']+label {
+        font-size: 14px;
+        line-height: 21px;
+        display: inline-block;
+        vertical-align: top;
+        cursor: pointer;
+        margin-left: 4px;
+    }
+    input[type='checkbox']:not(.switch) {
+        border-radius: 4px;
+    }
+    input[type='checkbox']:not(.switch):after {
+        width: 5px;
+        height: 9px;
+        border: 2px solid var(--active-inner);
+        border-top: 0;
+        border-left: 0;
+        left: 6px;
+        top: 3px;
+        -webkit-transform: rotate(var(--r, 20deg));
+        transform: rotate(var(--r, 20deg));
+    }
+    input[type='checkbox']:not(.switch):checked {
+        --r: 43deg;
+    }
+    input[type='checkbox'].switch {
+        width: 38px;
+        border-radius: 11px;
+    }
+    input[type='checkbox'].switch:after {
+        left: 2px;
+        top: 2px;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        background: var(--ab, var(--border));
+        -webkit-transform: translateX(var(--x, 0));
+        transform: translateX(var(--x, 0));
+    }
+    input[type='checkbox'].switch:checked {
+        --ab: var(--active-inner);
+        --x: 17px;
+    }
+    input[type='checkbox'].switch:disabled:not(:checked):after {
+        opacity: .6;
+    }
+    input[type='radio'] {
+        border-radius: 50%;
+    }
+    input[type='radio']:after {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: var(--active-inner);
+        opacity: 0;
+        -webkit-transform: scale(var(--s, 0.7));
+        transform: scale(var(--s, 0.7));
+    }
+    input[type='radio']:checked {
+        --s: .5;
+    }
+}
+
+
+
+
+/* Css cho input range - slider */
+input[type=range] {
+    height: 25px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+    background-color: transparent;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animation: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #2497E3;
+    border-radius: 1px;
+    border: 0px solid #000000;
+}
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid #2497E3;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #A1D0FF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #2497E3;
+}
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animation: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #2497E3;
+    border-radius: 1px;
+    border: 0px solid #000000;
+}
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid #2497E3;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #A1D0FF;
+    cursor: pointer;
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animation: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #2497E3;
+    border: 0px solid #000000;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-fill-upper {
+    background: #2497E3;
+    border: 0px solid #000000;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #000000;
+    border: 1px solid #2497E3;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #A1D0FF;
+    cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #2497E3;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #2497E3;
+}
+
+
+
+
+
+/* React-Toastify */
+.Toastify__progress-bar {
+    height: 3px;
+    background-color: rgb(182, 182, 182);
+}
+.notification-title {
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 700;
+}
+div.notification-title ::after {
+    font: normal normal normal 20px/1 "Material Icons";
+    display: inline-block;
+    vertical-align: top;
+    line-height: 19px;
+    font-weight: 900;
+}
+.Toastify__toast--success .notification-title ::after {
+    color: #4da75b;
+    content: "check_circle";
+}
+.Toastify__toast--error .notification-title ::after {
+    color: rgb(236, 61, 61);
+    content: "error_outline";
+}
+.Toastify__toast--info .notification-title {
+    color: rgb(54, 156, 199);
+}
+.Toastify__toast--success .notification-title {
+    color: rgb(94, 164, 0);
+}
+.Toastify__toast--warning .notification-title {
+    color: rgb(235, 173, 26);
+}
+.Toastify__toast--error .notification-title {
+    color: rgb(236, 61, 61);
+}
+
+.Toastify__toast-container {
+    width: 320px;
+}
+.Toastify__toast {
+    min-height: 75px;
+    padding: 5px !important;
+    position: relative;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 13px;
+    margin: 10px 0px 0px;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: all 0.3s ease-in-out 0s;
+    transform: translate3d(0px, 0px, 0px);
+    will-change: transform, opacity;
+    right: 0px;
+}
+.Toastify__toast--info {
+    background-color: rgb(232, 240, 244);
+    color: rgb(65, 85, 93);
+}
+.Toastify__toast--success {
+    background: rgb(240, 245, 234);
+    color: rgb(75, 88, 58);
+}
+.Toastify__toast--warning {
+    background-color: rgb(249, 246, 240);
+    color: rgb(90, 83, 67);
+}
+.Toastify__toast--error {
+    background-color: rgb(244, 233, 233);
+    color: rgb(65, 47, 47);
+}
+  
+.Toastify__close-button {
+    font-family: Arial;
+    font-size: 11px;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    line-height: 15px;
+    background-color: rgb(176, 202, 146);
+    color: rgb(240, 245, 234);
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.Toastify__toast--info .Toastify__close-button {
+    background-color: rgb(164, 190, 203);
+    color: rgb(232, 240, 244);
+}
+.Toastify__toast--success .Toastify__close-button {
+    background-color: rgb(176, 202, 146);
+    color: rgb(240, 245, 234);
+}
+.Toastify__toast--warning .Toastify__close-button {
+    background-color: rgb(225, 207, 172);
+    color: rgb(249, 246, 240);
+}
+.Toastify__toast--error .Toastify__close-button {
+    background-color: rgb(228, 190, 190);
+    color: rgb(244, 233, 233);
+}

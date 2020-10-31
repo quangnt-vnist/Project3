@@ -1,0 +1,56 @@
+div.select2 {
+    width: 100%;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    div.select2 {
+        display: inline-block;
+    }
+}
+
+
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #3c8dbc;
+    border-color: #367fa9;
+    padding: 1px 10px;
+    color: #fff;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 0;
+    padding-right: 0;
+    height: auto;
+    margin-top: -4px;
+}
+
+.select2-container--default .select2-selection--single, .select2-selection .select2-selection--single {
+    border: 1px solid #d2d6de;
+    border-radius: 0;
+    padding: 6px 12px;
+    height: 34px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    margin-top: 0;
+}
+
+
+
+
+/* Placeholder css cho select2 */
+input.select2-search__field { /* Khắc phục lỗi sát lề placehoder ở chế độ multiple */
+    text-indent: 8px;
+}
+.select2-container .select2-search--inline:first-child {
+    float: none; /* Khắc phục lỗi width=0 cho input, không hiển thị placeholder khi select2 khởi tạo trong hidden element */
+}
+.select2-container .select2-search--inline:first-child .select2-search__field{
+    width: 100% !important; /* Khắc phục lỗi width=0 cho input, không hiển thị placeholder khi select2 khởi tạo trong hidden element */
+}

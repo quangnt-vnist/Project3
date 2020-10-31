@@ -1,0 +1,20 @@
+{
+  "name": "client",
+  "description": "",
+  "main": "",
+  "authors": [
+    "thainv-vnist <thainv.vnist@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/VNISTResearch/qlcv",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lib": "https://github.com/VNISTResearch/qlcv-template.git"
+  }
+}

@@ -1,0 +1,133 @@
+/* Highlight node được chọn */
+.jstree-default .jstree-clicked {
+    background: #beebff;
+}
+
+
+/* Thay nút mở rộng thu gọn 1 node */
+.jstree-default .jstree-open>.jstree-ocl {
+    background-image: none;
+}
+.jstree-default .jstree-closed>.jstree-ocl {
+    background-image: none;
+}
+.jstree-default>.jstree-no-dots .jstree-open:not(.jstree-leaf)>.jstree-ocl::before,
+.jstree-default>.jstree-no-dots .jstree-closed:not(.jstree-leaf)>.jstree-ocl::before {
+    font: normal normal normal 18px/1 "Material Icons";
+    color: #555;
+    margin-right: -6px;
+    display: inline-block;
+    content: "\E5CE";
+    vertical-align: top;
+    padding-top: 5px;
+}
+.jstree-default>.jstree-no-dots .jstree-closed:not(.jstree-leaf)>.jstree-ocl::before {
+    content: "\E5CF";
+}
+
+
+
+
+
+/* Thay icon cho node */
+.jstree-default  i.jstree-icon.jstree-themeicon{
+    display: inline-block;
+    background-image: none;
+}
+.jstree-default i.jstree-icon.jstree-themeicon::before {
+    font: normal normal normal 18px/1 "Material Icons";
+    color: #a93a3a;
+    margin-right: 4px;
+    display: inline-block;
+    content: "view_agenda";
+    vertical-align: top;
+    padding-top: 5px;
+}
+.jstree-default .jstree-leaf i.jstree-icon.jstree-themeicon::before { /* Icon node lá */
+    color: #4da75b;
+    content: "eco";
+}
+
+
+
+/* Đổi style tree */
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+    /* Dãn dòng */
+    .jstree-default .jstree-anchor {
+        line-height: 28px;
+        height: 28px;
+        padding: 0 15px 0 5px;
+    }
+
+
+    /* Đổi style checkbox */
+    .jstree-default .jstree-icon.jstree-checkbox {
+        background-image: none;
+    }
+    .jstree-default .jstree-icon.jstree-checkbox{
+        --active: #3c8dbc;
+        --active-inner: #fff;
+        --focus: 2px rgba(60, 142, 190, 0.3);
+        --border: #aec8d6;
+        --border-hover: #3c8dbc;
+        --background: #fff;
+        --disabled: #F6F8FF;
+        --disabled-inner: #E1E6F9;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        height: 18px;
+        width: 18px;
+        outline: none;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        margin: 5px 5px 0 0;
+        cursor: pointer;
+        border: 1px solid var(--bc, var(--border));
+        background: var(--b, var(--background));
+        -webkit-transition: background .3s, border-color .3s, box-shadow .2s;
+        transition: background .3s, border-color .3s, box-shadow .2s;
+    }
+    .jstree-default .jstree-icon.jstree-checkbox:after {
+        content: '';
+        display: block;
+        left: 0;
+        top: 0;
+        position: absolute;
+        -webkit-transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+        transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+        transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+        transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    }
+    .jstree-default .jstree-checked>.jstree-checkbox {
+        --b: var(--active);
+        --bc: var(--active);
+        --d-o: .3s;
+        --d-t: .6s;
+        --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+    }
+    .jstree-default .jstree-checked>.jstree-checkbox::after{
+        --o: 1;
+    }
+    .jstree-default .jstree-checked>.jstree-checkbox::after {
+        width: 5px;
+        height: 9px;
+        border: 2px solid var(--active-inner);
+        border-top: 0;
+        border-left: 0;
+        left: 6px;
+        top: 3px;
+        -webkit-transform: rotate(var(--r, 20deg));
+        transform: rotate(var(--r, 20deg));
+    }
+    .jstree-default .jstree-checked>.jstree-checkbox::after{
+        --r: 43deg;
+    }
+    .jstree-default .jstree-anchor>.jstree-undetermined:after {
+        width: 16px;
+        height: 16px;
+        background: var(--active);
+        -webkit-transform: scale(var(--s, 0.7));
+        transform: scale(var(--s, 0.7));
+    }
+}

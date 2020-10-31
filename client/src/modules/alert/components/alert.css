@@ -1,0 +1,12 @@
+.display-block {
+    display: block;
+    background-color: rgb(235, 228, 228);
+}
+
+.display-none {
+    display: none;
+}
+
+.top-200 {
+    margin-top: 200px;
+}

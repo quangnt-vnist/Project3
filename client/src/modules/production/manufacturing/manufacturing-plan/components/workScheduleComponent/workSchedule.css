@@ -1,0 +1,47 @@
+/*
+ * Component: Table
+ * ----------------
+ */
+.table-custom > thead > tr > th,
+.table-custom > tbody > tr > th,
+.table-custom > tfoot > tr > th,
+.table-custom > thead > tr > td,
+.table-custom > tbody > tr > td,
+.table-custom > tfoot > tr > td {
+    border-top: 1px solid #f4f4f4;
+}
+.table-custom > thead > tr > th {
+    border-bottom: 2px solid #f4f4f4;
+}
+.table-custom tr td .progress {
+    margin-top: 5px;
+}
+.table-custom-bordered {
+    border: 1px solid #f4f4f4;
+}
+.table-custom-bordered > thead > tr > th,
+.table-custom-bordered > tbody > tr > th,
+.table-custom-bordered > tfoot > tr > th,
+.table-custom-bordered > thead > tr > td,
+.table-custom-bordered > tbody > tr > td,
+.table-custom-bordered > tfoot > tr > td {
+    border: 1px solid #898989;
+}
+
+.table-custom-bordered > thead > tr > th,
+.table-custom-bordered > thead > tr > td {
+    border-bottom-width: 2px;
+}
+
+.table-custom thead tr th,
+.table-custom thead tr td,
+.table-custom tbody tr td {
+    text-align: center;
+}
+.table-custom {
+    width: 100%;
+}
+
+.td-content {
+    cursor: pointer;
+}

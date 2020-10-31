@@ -1,0 +1,333 @@
+header.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #605CA8;
+}
+
+header.fixed-top > h3 {
+    margin: 0;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+span.dx-language {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+}
+
+span.dx-language > button {
+    color: white;
+    font-size: 2.6rem;
+    font-weight: bolder;
+    background-color: #ffffff00;
+    border: none;
+}
+
+span.dx-language-setting {
+    padding: 4px;
+    position: absolute;
+    top: 50px;
+    right: 8px;
+    background-color: #fff;
+    display: none;
+}
+
+span.dx-language-setting > a > img {
+    width: 30px;
+    margin: 2px 5px;
+    height: auto;
+}
+
+span.dx-auth {
+    position: absolute;
+    top: 13px;
+    right: 50px;
+}
+
+span.dx-auth > button.signin {
+    padding: 5px 12px;
+    border: none;
+    background-color: white;
+    border-radius: 2px;
+    color: #605CA8;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+footer.dx-footer {
+    background-color: #fff;
+}
+
+footer.dx-footer > div.copyright {
+    padding: 20px;
+    border-top: 0.5px solid #c1c1c1;
+    text-align: center;
+}
+
+div.row.dx-footer {
+    background-color: #c1c1c1;
+}
+
+section.dx-container {
+    background-color: #fff;
+    padding: 60px 400px;
+}
+
+@media (max-width: 1400px) {
+    section.dx-container {
+        padding: 60px 120px;
+    }    
+}
+
+@media (max-width: 900px) {
+    section.dx-container {
+        padding: 60px 120px;
+    }    
+}
+
+@media (max-width: 768px) {
+    section.dx-container {
+        padding: 60px 10px 0px 10px;
+    }    
+}
+
+.p-center-h {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.p-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.dx-intro-image {
+    width: 100%;
+    height: auto;
+}
+
+ul.dx-services {
+    margin-top: 20px;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+li.dx-service-item {
+    font-weight: 400;
+}
+
+h2.dx-sologan {
+    font-size: 4rem;
+}
+
+li.dx-service-item > i {
+    color: #fff;
+    padding: 5px;
+}
+
+section#dx-intro {
+    padding-top: 80px;
+    background-color: #605CA8;
+    color: #fff;
+}
+
+section#dx-service {
+    background-color: #F7FDFD;
+}
+
+section#dx-service > h3 {
+    color: #605CA8;
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+section#dx-service > p {
+    width: 80%;
+    padding-left: 10%;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+section#dx-service-signup {
+    background-color: #F7FDFD;
+}
+
+section#dx-contact {
+    background-color: #F7FDFD;
+}
+
+h3.dx-contact {
+    text-align: center;
+    font-weight: bolder;
+}
+
+p.dx-contact {
+    color: gray;
+    text-align: center;
+}
+
+form.dx-contact {
+    margin-left: 20%;
+    width: 60%;
+    padding: 20px;
+}
+
+@media (max-width: 528px) {
+    form.dx-contact {
+        width: 100%;
+        padding: 20px;
+    } 
+}
+
+form.dx-contact > input {
+    width: 100%;
+    padding: 10px 20px;
+    border: 0.5px solid #b1b1b1;
+    border-radius: 2px;
+    margin: 3px 0px;
+}
+
+form.dx-contact > textarea {
+    width: 100%;
+    padding: 10px 20px;
+    border: 0.5px solid #b1b1b1;
+    border-radius: 2px;
+    margin: 3px 0px;
+}
+
+form.dx-contact > button.dx-contact {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    margin: 3px 0px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    background-color: #605CA8;
+} 
+
+ul.dx-locations {
+    margin-top: 20px;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+li.dx-location-item {
+    font-weight: 400;
+}
+
+li.dx-location-item > i {
+    color: #605CA8;
+    padding: 8px;
+    line-height: 1.3;
+}
+
+div.dx-card {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin: 18px 0px;
+    padding: 10px;
+    min-height: 330px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+img.dx-card {
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+div.dx-card:hover {
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.2);
+}   
+
+div.dx-card > .dx-card-header {
+    font-weight: bolder;
+
+}
+
+div.dx-card > .dx-card-body > h4 {
+    font-weight: bolder;
+    color: #605CA8;
+}
+
+div.dx-card > .dx-card-body > p {
+    color: #666666;
+}
+
+ul.dx-footer.care {
+    list-style-type: none;
+}
+
+li.dx-footer.care.item > i {
+    color: #605CA8;
+    padding-right: 2px;
+}
+
+form.dx-service > input {
+    width: 100%;
+    padding: 10px 20px;
+    border: 0.5px solid #b1b1b1;
+    border-radius: 2px;
+    margin: 3px 0px;
+}
+
+form.dx-service > select {
+    width: 100%;
+    padding: 10px 20px;
+    border: 0.5px solid #b1b1b1;
+    border-radius: 2px;
+    margin: 3px 0px;
+}
+
+form.dx-service > button.send {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    margin: 3px 0px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.6rem;
+    background-color: #605CA8;
+}
+
+span.p-center.media > img {
+    width: 32px;
+    padding: 2px;
+    height: auto;
+}
+
+img.service-image {
+    margin-top: 30px;
+    width: 60%;
+    height: auto;
+}
+
+.dx-workspace-button {
+    padding: 8px 12px;
+    border:  none;
+    border-radius: 2px;
+    color: #605CA8;
+    background-color: #fff;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}

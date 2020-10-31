@@ -1,0 +1,27 @@
+.timesheet-box {
+    width: 280px;
+    border-radius: 10px;
+    font-size: 13px;
+    margin: 10px 0px 0px;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    border-top: 2px solid rgb(236, 61, 61);
+    background-color: rgb(244, 233, 233);
+
+    -webkit-box-shadow: 4px 4px 15px rgba(50, 50, 50, 0.85);
+    -moz-box-shadow: 4px 4px 15px rgba(50, 50, 50, 0.85);
+    box-shadow: 4px 4px 15px rgba(50, 50, 50, 0.85);
+}
+
+.timesheet-box h4 {
+    font-size: 14px;
+    margin: 0px 0px 5px;
+    padding: 0px;
+    font-weight: bold;
+    color: rgb(54, 156, 199)
+}
+
+.timesheet-box .time {
+    font-size: 1.8em;
+}

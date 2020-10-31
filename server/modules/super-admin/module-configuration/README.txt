@@ -1,0 +1,1 @@
+1. Module thuc hien chuc nang cấu hình các tham số cho các chức năng

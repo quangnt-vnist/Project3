@@ -1,0 +1,53 @@
+.StyleScrollDiv{
+	width: 100%;
+	overflow: auto;
+}
+
+/* Lưu ý: Một số trình duyệt có thể không hỗ trợ đổi style scroll bar */
+
+.StyleScrollDiv:hover::-webkit-scrollbar-track
+{
+	border-radius: 8px;
+	background-color: #eeeeee;
+	bottom: 0px;
+	z-index: 1;
+}
+
+.StyleScrollDiv:hover::-webkit-scrollbar
+{
+	width: 8px;
+	height: 8px;
+	background-color: #ffffff;
+	z-index: 1;
+}
+
+.StyleScrollDiv:hover::-webkit-scrollbar-thumb
+{
+	border-radius: 8px;
+	background-color: #acacac;
+	z-index: 1;
+}
+
+
+/*
+Di chuột ra ngoài thì ẩn scroll bar
+*/
+.StyleScrollDiv::-webkit-scrollbar-track
+{
+	border-radius: 8px;
+	background-color: #ffffff;
+	bottom: 0px;
+}
+
+.StyleScrollDiv::-webkit-scrollbar
+{
+	width: 8px;
+	height: 8px;
+	background-color: #ffffff;
+}
+
+.StyleScrollDiv::-webkit-scrollbar-thumb
+{
+	border-radius: 8px;
+	background-color: #ffffff;
+}
