@@ -34,7 +34,7 @@ exports.searchMajor = async (portal, params) => {
     let listMajor = await Major(connect(DB_CONNECTION, portal)).find(keySearch)
         .sort({
             'createdAt': 'desc'
-        }).skip(params.page).limit(params.limit);
+        }).skip(params.limit * (params.page - 1)).limit(params.limit);
     let totalList = await Major(connect(DB_CONNECTION, portal)).countDocuments(keySearch);
 
     return {

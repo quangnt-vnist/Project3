@@ -458,6 +458,38 @@ const LINKS = [{
 },
 
 
+// phần link phục vụ cho nhân sự gói thầu
+{
+    url: '/hr-list-major',
+    description: 'Danh sách chuyên ngành tương đương',
+    category: LINK_CATEGORY.HUMAN_RESOURCE.name,
+    roles: [
+        ROOT_ROLES.ADMIN.name,
+    ],
+    components: getComponentsInLink('/hr-list-major')
+},
+
+{
+    url: '/hr-list-career-position',
+    description: 'Danh sách vị trí công việc tương đương',
+    category: LINK_CATEGORY.HUMAN_RESOURCE.name,
+    roles: [
+        ROOT_ROLES.ADMIN.name,
+    ],
+    components: getComponentsInLink('/hr-list-career-position')
+},
+
+{
+    url: '/hr-search-for-package',
+    description: 'Tìm kiếm nhân sự gói thầu',
+    category: LINK_CATEGORY.HUMAN_RESOURCE.name,
+    roles: [
+        ROOT_ROLES.ADMIN.name,
+    ],
+    components: getComponentsInLink('/hr-search-for-package')
+},
+
+
 
 
 // KPI

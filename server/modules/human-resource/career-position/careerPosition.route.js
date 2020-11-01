@@ -1,16 +1,16 @@
 const express = require("express");
 const router = express.Router();
 
-const AnnualLeaveController = require("./careerPosition.controller");
+const careerPositionController = require("./careerPosition.controller");
 const { auth } = require(`${SERVER_MIDDLEWARE_DIR}`);
 
 
-router.get('/annualLeaves', auth, AnnualLeaveController.searchAnnualLeaves);
+router.get('/career-positions', auth, careerPositionController.searchCareerPosition);
 
 
-router.post('/annualLeaves', auth, AnnualLeaveController.createAnnualLeave);
+// router.post('/career-positions', auth, careerPositionController.createAnnualLeave);
 
-router.patch('/annualLeaves/:id', auth, AnnualLeaveController.updateAnnualLeave);
-router.delete('/annualLeaves/:id', auth, AnnualLeaveController.deleteAnnualLeave);
+// router.patch('/career-positions/:id', auth, careerPositionController.updateAnnualLeave);
+// router.delete('/career-positions/:id', auth, careerPositionController.deleteAnnualLeave);
 
 module.exports = router;

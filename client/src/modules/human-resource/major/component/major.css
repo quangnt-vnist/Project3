@@ -1,0 +1,26 @@
+ul.major-tree {
+    list-style-type: none;
+}
+
+li.major-tree {
+    border-left: 0.8px dotted rgb(194, 194, 194);
+    padding: 10px;
+}
+
+a.major-tree-content {
+    border-bottom: 0.8px dotted rgb(194, 194, 194);
+    margin: 5px;
+    border: none;
+    margin-left: -4px;
+    font-size: 14px;
+    /* padding-left: -100px; */
+}
+
+a.major-tree-content:hover {
+    color: red;
+}
+
+.major-tree {
+    padding-top: 10px;
+    overflow: auto;
+}

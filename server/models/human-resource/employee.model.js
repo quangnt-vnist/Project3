@@ -163,9 +163,9 @@ const EmployeeSchema = new Schema({
     foreignLanguage: { // Trình độ ngoại ngữ
         type: String
     },
-    professionalSkill: { // Trình độ chuyên môn: intermediate_degree - Trung cấp, colleges - Cao đẳng, university-Đại học, master_degree - Thạc sỹ, phd- Tiến sỹ, unavailable - Không có 
+    professionalSkill: { // Trình độ chuyên môn: intermediate_degree - Trung cấp, colleges - Cao đẳng, university - Đại học, bachelor - cử nhân, engineer - kỹ sư, master_degree - Thạc sỹ, phd- Tiến sỹ, unavailable - Không có 
         type: String,
-        enum: ['intermediate_degree', 'colleges', 'university', 'master_degree', 'phd', 'unavailable']
+        enum: ['intermediate_degree', 'colleges', 'university', 'bachelor', 'engineer', 'master_degree', 'phd', 'unavailable']
     },
     healthInsuranceNumber: {
         type: String

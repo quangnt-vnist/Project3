@@ -942,6 +942,9 @@ export default {
             time_keeping: 'Chấm công nhân viên',
             list_education: 'Chương trình đào tạo bắt buộc',
             training_plan: 'Quản lý khoá đào tạo',
+            list_major: 'Danh sách chuyên ngành',
+            list_career_position: 'Danh sách vị trí công việc',
+            list_search_for_package: 'Tìm kiếm nhân sự gói thầu',
 
             manage_warehouse: 'Quản lý kho',
             dashboard_bill: 'Bảng tin quản lý các phiếu',

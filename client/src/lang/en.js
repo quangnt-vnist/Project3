@@ -868,6 +868,9 @@ export default {
             time_keeping: 'Attendance Staff',
             list_education: 'Training Programs',
             training_plan: 'Manage Training Courses',
+            list_major: 'Manage majors',
+            list_career_position: 'Manage career position',
+            list_search_for_package: 'Search employee for package',
 
             manage_warehouse: 'Manage warehouses',
             dashboard_material: "Dashboad manage materials",

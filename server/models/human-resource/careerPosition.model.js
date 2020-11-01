@@ -9,29 +9,21 @@ const CareerPositionSchema = new Schema({
     code: {
         type: String,
     },
-    description: [{
-        name: {
-            type: String,
-        },
-        code: {
-            type: String,
-        },
-        type: {
-            type: Number,
-            default: 1, // 1 - default, 0 - additional
-        },
-        // specialized: [{
-        //     name: {
-        //         type: String,
-        //     },
-        //     code: {
-        //         type: String,
-        //     },
-        //     type: {
-        //         type: Number,
-        //         default: 1, // 1 - default, 0 - additional
-        //     }
-        // }]
+    position: [{
+        name: String,
+        code: String, // lưu lại trong db của employees
+        description: [{
+            name: {
+                type: String,
+            },
+            code: [{
+                type: String,
+            }],
+            type: {
+                type: Number,
+                default: 1, // 1 - default, 0 - additional
+            },
+        }]
     }]
 }, {
     timestamps: true,

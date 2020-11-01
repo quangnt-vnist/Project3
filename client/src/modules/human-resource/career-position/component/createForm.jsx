@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withTranslate } from 'react-redux-multilingual';
 
-import { DialogModal, ErrorLabel, TreeSelect } from '../../../../../common-components';
-import { DocumentActions } from '../../../redux/actions';
-import ValidationHelper from '../../../../../helpers/validationHelper';
+import { DialogModal, ErrorLabel, TreeSelect } from '../../../../common-components';
+import { CareerPositionAction } from '../redux/actions';
+import ValidationHelper from '../../../../helpers/validationHelper';
 class CreateForm extends Component {
     constructor(props) {
         super(props);
@@ -23,15 +23,17 @@ class CreateForm extends Component {
         });
     }
 
-    handleDescription = (e) => {
+    handleCode = (e) => {
         const {value} = e.target;
+        let msg;
         this.setState({
-            description: value
+            code: value,
+            codeError: msg,
         });
     }
 
     handleParent = (value) => {
-        this.setState({ archiveParent: value[0] });
+        this.setState({ parent: value[0] });
     };
 
     isValidateForm = () => {
@@ -44,39 +46,40 @@ class CreateForm extends Component {
     save = () => {
         const data = {
             name: this.state.name,
-            description: this.state.description,
-            parent: this.state.archiveParent
+            code: this.state.code,
+            parent: this.state.parent,
         }
-        this.props.createDocumentArchive(data);
+        console.log('data', data);
+        // this.props.createDocumentArchive(data);
     }
 
     render() {
         const { translate, documents } = this.props;
-        const { list } = documents.administration.archives;
-        let { archiveParent, nameError } = this.state;
-        console.log('pppppppppp', list);
+        const { list } = this.props;
+        let { parent, nameError, codeError } = this.state;
         return (
             <React.Fragment>
                 <DialogModal
-                    modalID="modal-create-document-archive"
-                    formID="form-create-document-archive"
-                    title="Thêm mục lưu trữ"
+                    modalID="modal-create-career-position"
+                    formID="form-create-career-position"
+                    title="Thêm vị trí công việc"
                     disableSubmit={!this.isValidateForm()}
                     func={this.save}
                 >
-                    <form id="form-create-document-archive">
+                    <form id="form-create-career-position">
                         <div className={`form-group ${!nameError ? "" : "has-error"}`}>
-                            <label>{translate('document.administration.archives.name')}<span className="text-red">*</span></label>
+                            <label>Tên<span className="text-red">*</span></label>
                             <input type="text" className="form-control" onChange={this.handleName} />
                             <ErrorLabel content={nameError} />
                         </div>
                         <div className="form-group">
-                            <label>{translate('document.administration.archives.parent')}</label>
-                            <TreeSelect data={list} value={archiveParent} handleChange={this.handleParent} mode="radioSelect" />
+                            <label>Chọn thông tin cha</label>
+                            <TreeSelect data={list} value={parent} handleChange={this.handleParent} mode="radioSelect" />
                         </div>
-                        <div className="form-group">
-                            <label>{translate('document.administration.archives.description')}</label>
-                            <textarea style={{ minHeight: '100px' }} type="text" className="form-control" onChange={this.handleDescription} />
+                        <div className={`form-group ${!codeError ? "" : "has-error"}`}>
+                            <label>Nhãn<span className="text-red">*</span></label>
+                            <input type="text" className="form-control" onChange={this.handleCode} />
+                            <ErrorLabel content={nameError} />
                         </div>
                     </form>
                 </DialogModal>
@@ -88,7 +91,7 @@ class CreateForm extends Component {
 const mapStateToProps = state => state;
 
 const mapDispatchToProps = {
-    createDocumentArchive: DocumentActions.createDocumentArchive
+    createCareerPosition: CareerPositionAction.createCareerPosition,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(withTranslate(CreateForm));
